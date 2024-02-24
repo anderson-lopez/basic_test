@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+:root {
+  --main-theme-color: #fff;
+  --secondary-theme-color: #000;
+  --button-bg-color: #000;
+  --section-bg-color: #fff;
+  --section-transition: .3s;
+  --article-shadow: #0000004b;
+  --button-shadow: #00000076;
+  --button-transition: .3s;
+}
+
+.logo {
+  display: inline-block;
+  color: #000;
+}
+
+.container_navbar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 4em;
+  background-color: #f6f6f6;
+}
+
+nav div ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+nav div ul li a {
+  color: var(--secondary-theme-color);
+  text-decoration: none;
+  padding: 20px;
+}
+
+nav div ul li a:hover {
+  color: var(--main-theme-color);
+  background-color: var(--button-bg-color);
+  text-decoration: none;
+  opacity: .4;
+  transition: var(--button-transition);
+}
+
+nav a button {
+  border: none;
+  padding: 10px 24px;
+  background-color: #70deff;
+  border-radius: 30px;
+}
+
+nav a button:hover {
+  color: var(--main-theme-color);
+  background-color: var(--button-bg-color);
+  transition: .3s;
+}
+
+.section__mobile {
+  display: flex;
+  background-color: var(--section-bg-color);
+  text-align: center;
+}
+
+.section-mobile__smartphone-1, .section-mobile__smartphone-2, .section-mobile__smartphone-3, .section-mobile__smartphone-4, .section-mobile__smartphone-5 {
+  display: inline-block;
+  padding: 80px 20px;
+  width: 50%;
+  max-width: 100%;
+}
+
+.section-mobile__smartphone-1:hover, .section-mobile__smartphone-2:hover, .section-mobile__smartphone-3:hover, .section-mobile__smartphone-4:hover, .section-mobile__smartphone-5:hover {
+  display: block;
+  padding: 80px 20px;
+  max-width: 100%;
+  z-index: 10;
+  box-shadow: 0 0 200px 0 var(--article-shadow);
+  transition: var(--section-transition);
+}
+
+.section__mobile div img {
+  width: 80%;
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+
+.section__mobile h3 {
+  padding: 4px 0 24px;
+}
+
+.section__mobile div div p {
+  line-height: 1.7;
+  margin-bottom: 20px;
+} 
+
+.section__mobile a button {
+  border: none;
+  margin-bottom: 8px;
+  padding: 10px 20px;
+  background-color: #eaeaea;
+  border-radius: 30px;
+}
+
+.section__mobile a button:hover {
+  color: var(--main-theme-color);
+  background-color: var(--secondary-theme-color);
+  box-shadow: 0 0 15px 0 var(--button-shadow);
+  transition: var(--button-transition);
+}
